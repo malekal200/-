@@ -1,0 +1,422 @@
+body {    margin: 0;
+    font-family: Arial, sans-serif;}
+.navbar {
+    background-color: rgb(254, 254, 254);    display: flex;
+    align-items: center;    justify-content: space-between;
+    padding: 10px;    position: relative;
+}
+.navbar .logo img {    width: 80px;
+    height: 80px;    padding: 5px;
+}
+
+.menu-btn {    display: none;
+    background: none;    border: none;
+    cursor: pointer;    position: relative;
+    z-index: 1001;}
+.menu-icon {
+    display: flex;    flex-direction: column;
+    justify-content: center;    text-align: center;
+    width: 30px;    height: 25px;
+}
+.bar {    display: block;
+    width: 30px;    height: 3px;
+    background-color: #000;    margin: 5px 0;
+    transition: all 0.3s ease;}
+.menu-btn.active .bar1 {
+    transform: rotate(45deg);    position: absolute;
+    top: 10px;    left: 10px;
+}
+.menu-btn.active .bar2 {    opacity: 0;
+}
+.menu-btn.active .bar3 {    transform: rotate(-45deg);
+    position: absolute;    top: 10px;
+    left: 10px;}
+.list {
+    list-style: none;    display: flex;
+    margin: 0;    padding: 0;
+}
+.navbar .nav-itm {    padding: 10px 15px;
+    margin-left: 10px;}
+.navbar .list a {
+    text-decoration: none;    color: #000;
+    font-size: 25px;}
+.navbar .nav-itm:hover {
+    background-color: rgb(255, 255, 255);}
+.navbar .list a:hover {
+    color: rgb(223, 223, 223);}
+
+section{
+padding: 20px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center; /* محاذاة العنوان في المنتصف */
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 47px; /* حجم الخط للعناوين الكبيرة */
+    font-weight: bold; /* خط عريض */
+    color: #333; /* لون النص */
+    line-height: 1.2; /* ارتفاع السطر */
+    text-align: center;
+}
+
+.content {
+    font-size: 20px; /* حجم النص للفقرات */
+    line-height: 1.8; /* ارتفاع السطر للفقرات */
+    color: #555; /* لون النص للفقرات */
+    max-width: 800px; /* تحديد عرض الفقرات بحيث تكون القراءة مريحة */
+    margin: 0 auto; /* لجعل النص في المنتصف */
+    text-align: justify; /* توزيع النص بالتساوي */
+    text-align: right;
+}
+
+a {
+    color: #ff4500; /* لون الروابط */
+    text-decoration: none; /* إزالة التسطير من الروابط */
+}
+
+a:hover {
+    text-decoration: underline; /* تسطير الروابط عند مرور المؤشر عليها */
+}
+.home {
+    display: flex; /* استخدام flexbox لجعل العناصر بجانب بعضها */
+    justify-content: space-around; /* توزيع المسافات بالتساوي بين الصور */
+    flex-wrap: wrap; /* ليتكيف التخطيط في حال وجود عدد كبير من الصور */
+}
+
+.home div {
+    margin: 10px; /* مسافة بين العناصر */
+}
+
+.home img {
+    width: 100%; /* جعل الصور تستجيب لحجم الحاوية */
+    max-width: 300px; /* التحكم في حجم الصور حسب الحاجة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px;
+}
+.custom-button {
+    display: inline-block;
+    background-color: #e65816; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 15px 30px; /* المسافات الداخلية للزر */
+    text-align: center; /* محاذاة النص في المنتصف */
+    text-decoration: none; /* إزالة التسطير تحت النص */
+    border-radius: 30px; /* جعل الزوايا دائرية */
+    font-size: 12px; /* حجم الخط */
+    font-weight: bold; /* وزن الخط */
+    transition: background-color 0.3s ease; /* تأثير عند تمرير الفأرة */
+    margin-left: 50%;
+}
+.info-section {
+    text-align: right; /* محاذاة النص لليمين */
+    margin: 50px; /* إضافة مساحة حول النص */
+}
+
+.info-heading {
+    color: #e65816; /* لون برتقالي للنص */
+    font-size: 24px; /* حجم الخط */
+    font-weight: bold; /* وزن الخط */
+    margin-bottom: 10px; /* مسافة بين العنوان الرئيسي والعنوان الفرعي */
+    position: relative;
+}
+
+.info-heading::after {
+    content: ""; 
+    display: inline-block;
+    width: 50px; /* طول الخط البرتقالي الصغير */
+    height: 3px; /* ارتفاع الخط */
+    background-color: #e65816; /* لون الخط */
+    margin-right: 10px; /* مسافة بين الخط والنص */
+    vertical-align: middle;
+}
+
+.info-title {
+    color: #1c1c1e; /* لون أسود داكن للنص */
+    font-size: 36px; /* حجم الخط */
+    font-weight: bold; /* وزن الخط */
+    margin-bottom: 20px; /* مسافة بين العنوان الفرعي والوصف */
+}
+
+.info-description {
+    color: #4a4a4a; /* لون رمادي للنص */
+    font-size: 18px; /* حجم الخط */
+    line-height: 1.8; /* تباعد الأسطر */
+}
+.custom-button:hover {
+    background-color: #d64710; /* تغيير لون الخلفية عند التمرير */
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+.content-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    color: #ff6600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.main-text {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.team-section {
+    
+    background-color: #292929;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(228, 138, 11);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.team-member .social-icons a {
+    color: #555;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.team-member .social-icons a:hover {
+    color: #007bff;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content .text {
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    color: #e95b1e;
+    margin: 10px 0;
+}
+
+.footer-content h3 {
+    margin: 10px 0;
+    color: #f5f5f5;
+}
+.malek {
+font-size: 10px;
+margin: 10px 0; 
+margin-left: 50%;
+    color: #ddd;
+    
+}
+
+.footer-content p {
+    line-height: 1.6;
+    color: #ddd;
+    max-width: 600px;
+}
+
+.footer-content .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+.about{
+    background-color: #1c1f3c;
+}
+footer {
+    padding: 20px;
+    background-color: #03182d;
+}
+
+footer .social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+}
+/* styles.css */
+
+.footer {
+    background-color: #13163c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.email-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.email-button:hover {
+    background-color: #e64a19;
+}
+
+.social-icons p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon {
+    background-size: cover;
+}
+
+.facebook {
+    background-image: url('facebook-icon.png');
+}
+
+.twitter {
+    background-image: url('twitter-icon.png');
+}
+
+.instagram {
+    background-image: url('instagram-icon.png');
+}
+
+.youtube {
+    background-image: url('youtube-icon.png');
+}
+
+.tiktok {
+    background-image: url('tiktok-icon.png');
+}
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .footer-content .text {
+        flex: 1;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .footer-content .image {
+        flex: 1;
+    }
+}
+@media (max-width: 890px) {
+    .menu-btn {        display: block;
+    }
+    .list {        display: none;
+        flex-direction: column;        width: 100%;
+        text-align: center;        background-color: rgb(231, 231, 231);
+        position: absolute;        top: 100%;
+        right: 0;        z-index: 1000;
+    }
+    .list.active {        display: flex;
+    }}
+@media only screen and (max-width: 480px) {
+    .navbar {        justify-content: flex-start;
+    }
+    .navbar .logo {        margin-right: auto;
+    }
+    body {
+        background-color: white;    }
+    .navbar {
+        background-color: white;    }
+    .navbar .list a {
+        color: #000;
+    }
+    .navbar .nav-itm:hover {        background-color: rgb(255, 255, 255);
+    }}
