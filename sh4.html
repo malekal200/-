@@ -4,89 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بيوت الشباب حول العالم</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="بيت شباب الجميل .jpg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl; /* Right-to-left layout */
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .category {
+            width: 45%;
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .category h2 {
+            color: #e63946;
+            font-size: 1.2em;
+            border-bottom: 2px solid #e63946;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .item span {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>بيوت الشباب حول العالم</h1>
-        <div class="regions">
-            <div class="region">
+        <div class="section">
+            <div class="category">
                 <h2>بيوت الشباب في أوروبا</h2>
-                <ul>
-                    <li>الاتحاد الدولي لبيوت الشباب</li>
-                    <li>الاتحاد الأوروبي لبيوت الشباب</li>
-                </ul>
+                <div class="item"><span>🏠</span>الاتحاد الدولي لبيوت الشباب</div>
+                <div class="item"><span>🏠</span>الاتحاد الأوروبي لبيوت الشباب</div>
             </div>
-            <div class="region">
-                <h2>بيوت الشباب في أوروبا</h2>
-                <ul>
-                    <li>الجامعة المتحدة لبيوت الشباب الفرنسية</li>
-                    <li>بيوت الشباب الألمانية</li>
-                </ul>
-            </div>
-            <div class="region">
+            <div class="category">
                 <h2>بيوت الشباب في آسيا</h2>
-                <ul>
-                    <li>الجمعية العربية السعودية لبيوت الشباب</li>
-                </ul>
+                <div class="item"><span>🏠</span>الجمعية العربية السعودية لبيوت الشباب</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="category">
+                <h2>بيوت الشباب في أوروبا</h2>
+                <div class="item"><span>🏠</span>الجامعة المتحدة لبيوت الشباب الفرنسية</div>
+                <div class="item"><span>🏠</span>بيوت الشباب الألمانية</div>
+            </div>
+            <div class="category">
+                <h2> بيوت الشباب في أوروبا</h2>
+                <div class="item"><span>🏠</span>بيوت الشباب البلجيكية VJH</div>
+                <div class="item"><span>🏠</span>بيوت الشباب البلجيكية LAJ</div>
             </div>
         </div>
     </div>
 </body>
-<script src="script.js"></script>
 </html>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    direction: rtl;
-    text-align: right;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.regions {
-    display: flex;
-    justify-content: space-between;
-}
-
-.region {
-    width: 32%;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.region h2 {
-    color: #ff6600;
-    border-bottom: 2px solid #ff6600;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.region ul {
-    list-style: none;
-    padding: 0;
-}
-
-.region li {
-    margin-bottom: 10px;
-}
-
-</style>
